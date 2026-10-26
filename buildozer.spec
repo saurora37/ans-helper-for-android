@@ -26,6 +26,13 @@ android.permissions = WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE
 # 架构
 android.archs = arm64-v8a, armeabi-v7a
 
+# 固定稳定版本（规避最新 build-tools 37.0.0 安装失败导致找不到 aidl）
+android.api = 34
+android.minapi = 21
+android.ndk = 25b
+android.build_tools = 34.0.0
+android.accept_sdk_license = True
+
 # 去掉代码里的调试日志
 log_level = 2
 
